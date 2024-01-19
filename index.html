@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - M&n</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+     <form name="myform" action="website.html" onsubmit="return validateform()" >
+        <div class="form-User">
+               Username: <input type="text" name="Username" placeholder="eg: xyz123"><br/>
+        </div>
+        <div class="form-pass">
+               Password: <input type="password" name="Password" placeholder="Minimum 8 digits required"><br/>
+        </div>
+        <div class="Remember">
+        <p><input type="checkbox">Remember Me<input type="submit" value="Submit"><br>
+            <a href="#"> Forget Password</a>
+        </div>
+               
+                <script>
+                    function validateform(){
+                    var Username=document.myform.Username.value;
+                    var Password=document.myform.Password.value;
+                    
+                    if (Username==null || Username==""){
+                    alert("Please Enter your Username");
+                    return false;
+                    }else if(Password.length<8){
+                    alert("Password must be at least 8 characters long.");
+                    return false;
+                    }
+                    }
+                    </script>
+         </form>
+    </div>
+    <footer>
+        <div class="footer">
+            This login form was made by Rishikesh<br>
+            All rights reserved to Mn Projects {Rishi Projects}
+        </div>
+    </footer>
+</body>
+</html>

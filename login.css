@@ -1,0 +1,41 @@
+body{
+    background-image: url(projs.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    background-image: url(Rishi\ \(1\).png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: red;
+    border: 7px double rgb(15, 234, 246);
+    box-shadow: 5px 5px 5px pink;
+}
+.form-User{
+    color: white;
+
+}
+
+.form-pass{
+    color: white;
+    text-shadow: 2cap black;
+}
+
+.Remember{
+    color: white;
+}
+
+
+    
+    
